@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24D00592-D6E4-4A77-8759-84B9EF459E55}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI.BrowserDialogHandlers</RootNamespace>
+    <AssemblyName>UI.BrowserDialogHandlers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bricks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=83a26c96fb92c77f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\Bricks.dll</HintPath>
+    </Reference>
+    <Reference Include="Bricks.RuntimeFramework">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\Bricks.RuntimeFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtensionNUnit">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\1.0.0.1\ExtensionNUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="White.Core">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomCommands.Silverlight">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomCommands.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomCommands.WPF">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomCommands.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomControls">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomControls.Peers">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomControls.Peers.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomControls.Peers.Silverlight">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomControls.Peers.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="White.CustomControls.Silverlight">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.CustomControls.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="White.NUnit">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.NUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="White.Reporting">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="White.Repository">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="White.WebBrowser">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\White.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xstream.Core">
+      <HintPath>I:\Install\Files\Shared\LF.Shared\White\Xstream.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoitXImport.cs" />
+    <Compile Include="Dialog_Base.cs" />
+    <Compile Include="Dialog_Import.cs" />
+    <Compile Include="Dialog_Save.cs" />
+    <Compile Include="Dialog_SaveOptions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="I:\Install\Files\Shared\LF.Shared\White\log4net.config">
+      <Link>log4net.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AutoItX3Lib">
+      <Guid>{F8937E53-D444-4E71-9275-35B64210CC3B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

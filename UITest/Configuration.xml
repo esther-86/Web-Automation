@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<Gotos>
+  <Goto Url='http://www.google.com' WaitMs='500-1000' >
+    <WebActions>
+      <TypeText TypeIntoElementAt='input.gLFyf.gsfi' TextValue='cha2o' ShouldSubmit='true'/>
+      <ClickPageResultsAndBackBtn Pages='2' ClickOnElementAt="div.yuRUbf > a" ClickNextAt='#pnnext > span:nth-child(2)'>
+        <SpecialClick Url='.*rightlook.*' WaitMsString='30000' Window='New' />
+      </ClickPageResultsAndBackBtn>
+    </WebActions>
+  </Goto>
+</Gotos>
